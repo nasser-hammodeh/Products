@@ -1,0 +1,25 @@
+﻿<style>
+
+    #div {
+        width: 20px;
+        height: 20px;
+        /*        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;*/
+    }
+</style>
+<div class="container">
+    <img src="~/Nasser.jpeg" width="300" height="300" />
+    <h1>Welcome to <b>NASSER's Products</b> website.</h1>
+    <pre><i class="fa fa-exclamation-triangle" style="color:yellow"></i> CAUTION : this website still under construction.</pre>
+</div>
+<div id="div">
+    
+</div>
+<script>
+    var colors = ["#ef5350", "#ab47bc", "#651fff", "#3949ab", "#2196f3", "#00bcd4", "#4caf50"," #ffc107"];
+    window.setInterval(function () {
+        var color = colors[Math.floor(0 + Math.random() * (colors.length - 1))];
+        document.getElementById("div").style.backgroundColor = color;
+    }, 500);
+</script>
